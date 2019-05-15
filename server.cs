@@ -1,3 +1,4 @@
+using System;
 using System.IO.Pipes;
 using System.Text;
 
@@ -20,6 +21,7 @@ namespace NamedPipesPython {
                 message += Encoding.UTF8.GetString(bytes_to_read);
             } while (!server.IsMessageComplete);
 
+            Console.Write(message);
             server.Disconnect();
             server.Close();
 
