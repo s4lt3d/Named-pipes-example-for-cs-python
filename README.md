@@ -10,5 +10,10 @@ This guide demonstrates how to use named pipes to exchange data between a C# app
   ```bash
   pip install pywin32
 
-How to use it:
-Start the C# program, then run the python script. The C# program will wait for python to start and connect. 
+## How to use it:
+
+- Run the C# application to start the named pipe server.
+- Run the Python script. It will connect to the C# server and the two will exchange messages.
+- Observe the messages each application prints. The C# application should display "Hello Back" and the Python script should display "Hello Python".
+
+- Enjoy your cross-application data exchange!
